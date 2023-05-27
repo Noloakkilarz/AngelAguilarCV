@@ -1,0 +1,40 @@
+---
+import '../css/style.css'
+const {title} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Ángel Aguilar</title>
+	</head>
+	<body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <h1>Ángel Aguilar</h1>
+          </div>
+          <div class="menu-items">
+            <li><a href="/">Sobre mi</a></li>
+            <li><a href="Trabajos">Experiencia</a></li>
+            <li><a href="Estudios">Formación</a></li>
+            <li><a href="Otros">Otros Datos</a></li>
+            <li><a href="Redes">Contactar Conmigo</a></li>
+          </div>
+        </div>
+      </div>      
+    </nav>
+    <article>
+        <slot />
+    </article>
+    </body>
+</html>

@@ -1,15 +1,17 @@
 ---
+import '../css/card.css'
+import Layout from '../layouts/NavBar.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+    <div class="container-card">
+        <div class="card">
+          <img src="../../img/Xheyl.jpg" alt="Card Image">
+          <div class="card-content">
+            <h2>Ángel Aguilar</h2>
+            <p>Soy una persona a la cual le cuesta estresarse, siempre intentando buscar soluciones lógicas y curioso para descubrir cosas nuevas. 
+               <br>Creativo cuando se necesita y capaz de adaptarme a los cambios.</p>
+          </div>
+        </div>
+    </div>
+</Layout>
