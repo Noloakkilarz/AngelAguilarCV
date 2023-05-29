@@ -1,5 +1,6 @@
 ---
 import '../css/style.css'
+import '../css/loading.css'
 const {title} = Astro.props;
 ---
 <html lang="en">
@@ -11,6 +12,16 @@ const {title} = Astro.props;
 		<title>Ángel Aguilar</title>
 	</head>
 	<body>
+    <div id="loading">
+
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+      </div>
+    </div>
     <nav>
       <div class="navbar">
         <div class="container nav-container">
@@ -37,4 +48,13 @@ const {title} = Astro.props;
         <slot />
     </article>
     </body>
+    <script>
+      function addClassLoaded(){
+        var body = document.getElementsByTagName("body")[0];
+        body.classList.add("loaded");
+      }
+      document.addEventListener("DOMContentLoaded", function(event){
+        addClassLoaded();
+      });
+    </script>
 </html>
