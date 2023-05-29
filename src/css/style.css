@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("../../img/background.png");
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -123,6 +123,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 
 .logo {
   position: absolute;
