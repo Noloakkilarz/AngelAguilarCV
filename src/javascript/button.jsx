@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/Button.css';
 import '../css/Night.css';
 
-class Button extends Component {
+class Buttons extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -56,4 +56,4 @@ class Button extends Component {
   }
 }
 
-export default Button;
+export default Buttons;
