@@ -1,0 +1,23 @@
+.rotate-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+  margin-top: 40px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .night .rotate-button {
+    background-color: black;
+    color:white;
+  }
+
+  .rotate-button:active {
+    transform: rotate(180deg);    
+  } 
